@@ -82,8 +82,8 @@ int main()
     while (thoat == 0)
     {
         cout << "============MENU===========" << '\n';
-        cout << "1.HIEN SP" << '\n';
-        cout << "2.NHAP SP" << '\n';
+        cout << "1.NHAP SP" << '\n';
+        cout << "2.HIEN SP" << '\n';
         cout << "3.XOA SP" << '\n';
         cout << "4.TIM SP" << '\n';
         cout << "5.SP GIA CAO NHAT" << '\n';
@@ -93,32 +93,6 @@ int main()
         switch (chon)
         {
         case 1:
-            z = 0;
-            for (int i = 0; i < m; i++)
-            {
-                if (h[i].sl != 0)
-                {
-                    z++;
-                }
-            }
-            if (z != 0)
-            {
-                cout << "==========DANH SACH SP==========" << '\n';
-                for (int i = 0; i < m; i++)
-                {
-                    if (h[i].sl != 0)
-                    {
-                        h[i].xuat();
-                    }
-                }
-            }
-            if (z == 0)
-            {
-                cout << "CHUA CO SP" << '\n';
-            }
-
-            break;
-        case 2:
             slmn = 0;
             dung = 0;
             kt = 0;
@@ -154,6 +128,33 @@ int main()
                 }
             }
             break;
+        case 2:
+            z = 0;
+            for (int i = 0; i < m; i++)
+            {
+                if (h[i].sl != 0)
+                {
+                    z++;
+                }
+            }
+            if (z != 0)
+            {
+                cout << "==========DANH SACH SP==========" << '\n';
+                for (int i = 0; i < m; i++)
+                {
+                    if (h[i].sl != 0)
+                    {
+                        h[i].xuat();
+                    }
+                }
+            }
+            if (z == 0)
+            {
+                cout << "CHUA CO SP" << '\n';
+            }
+
+            break;
+        
         case 3:
             sttx = 0;
             kt = 0;
