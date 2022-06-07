@@ -179,6 +179,7 @@ int main()
         case 4:
             kt = 0;
             cout << "NHAP TEN SP CAN TIM: ";
+            cin.ignore();
             getline(cin, faketen);
             fflush(stdin);
             for (int i = 0; i < m; i++)
